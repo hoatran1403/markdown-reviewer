@@ -2,6 +2,6 @@ import { createStore } from 'redux';
 
 
 
-const store = createStore();
+// const store = createStore();
 
-export default store;
+// export default store;
