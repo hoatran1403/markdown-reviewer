@@ -1,7 +1,9 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-//import components
+
+//import css
+import bootstrap from './../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 //import react router dependencies
 import { Router, Route, IndexRoute, browserHistory} from 'react-router';

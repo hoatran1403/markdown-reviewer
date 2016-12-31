@@ -3,7 +3,7 @@ import React from 'react';
 const TextPreview = React.createClass({
   render(){
     return(
-      <div class="panel-body">this is text Preview </div>
+      <div className="panel-body">this is text Preview </div>
     );
   }
 });
