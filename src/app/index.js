@@ -1,27 +1,22 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
+import { createStore } from 'redux'
+import { Provider } from 'react-redux';
 
+import App from './components/App';
+import text from './reducers/text';
 
 //import css
 import bootstrap from './../../node_modules/bootstrap/dist/css/bootstrap.css';
 
-//import react router dependencies
-import { Router, Route, IndexRoute, browserHistory} from 'react-router';
-import { Provider } from 'react-redux';
-import store from './store';
-import Main from './components/Main'
+const defaultState = {
+  parsedText : "testing testing"
+}
 
-//Router configure
-// const router = (
-//   <Provider>
-//     <Router>
-//       <Route path="/" >
-//         <IndexRoute component = {Main}></IndexRoute>
-//
-//       </Route>
-//     </Router>
-//   </Provider>
-// )
+const store = createStore(text);
 
 //render DOM
-render(<Main />, document.getElementById('root'))
+render(
+  <Provider store= {store}>
+    <App />
+  </Provider> , document.getElementById('root'));
