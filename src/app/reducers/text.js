@@ -1,5 +1,5 @@
 // Text Reducer
-function text(state = {}, action){
+function text(state = 'initial state', action){
   switch (action.type) {
     case 'PARSE_TEXT':
       return Object.assign({}, state,{

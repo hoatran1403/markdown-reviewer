@@ -4,16 +4,19 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux';
 
 import App from './components/App';
-import text from './reducers/text';
+import reducer from './reducers';
 
 //import css
 import bootstrap from './../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 const defaultState = {
-  parsedText : "testing testing"
+  text: {
+    parsedText : "testing testing"
+  }
+
 }
 
-const store = createStore(text);
+const store = createStore(reducer);
 
 //render DOM
 render(

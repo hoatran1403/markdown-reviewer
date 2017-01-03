@@ -4,15 +4,16 @@ import PreviewText from '../containers/PreviewText';
 
 
 const App = React.createClass({
+
   render() {
+
     return (
-      <div className="row">
-        <div className="col-sm-6">
+      <div>
+
           <InputText />
-        </div>
-        <div className="col-sm-6">
+
           <PreviewText />
-        </div>
+      
       </div>
     );
   }

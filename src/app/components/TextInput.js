@@ -9,11 +9,10 @@ import React from 'react';
 //   }
 // });
 
-const TextInput = ({ showPreview }) => {
-
-  console.log('run to this');
+const TextInput = ({ showPreview, state }) => {
   return (
-    <textArea className="form-control" rows="10" id="textInput"/>
+    // <textArea className="form-control" rows="10" id="textInput"/>
+    <div>{state}</div>
   )
 }
 

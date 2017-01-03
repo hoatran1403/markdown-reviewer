@@ -2,9 +2,11 @@ import { connect } from 'react-redux';
 import { parseText} from '../actions/actionCreators';
 import TextInput from '../components/TextInput';
 
-const mapStateToProps = (state) => ({
-  state
-})
+const mapStateToProps = (state) => {
+  return ({
+    state
+  });
+}
 
 const mapDispatchToProps = (dispatch) => ({
   showPreview: (text) => {
