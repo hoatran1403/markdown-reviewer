@@ -11,7 +11,7 @@ import React from 'react';
 const TextPreview = ({state, dispatch}) => {
 
   return(
-    <div className="panel-body">askjcbas{state}</div>
+    <div className="panel-body">{state.text}</div>
   )
 }
 

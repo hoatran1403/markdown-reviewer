@@ -8,12 +8,13 @@ const App = React.createClass({
   render() {
 
     return (
-      <div>
-
+      <div className="row">
+        <div className="col-sm-6">
           <InputText />
-
+        </div>
+        <div className="col-sm-6">
           <PreviewText />
-      
+        </div>
       </div>
     );
   }

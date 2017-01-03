@@ -10,9 +10,13 @@ import React from 'react';
 // });
 
 const TextInput = ({ showPreview, state }) => {
+  let input
   return (
-    // <textArea className="form-control" rows="10" id="textInput"/>
-    <div>{state}</div>
+    <textArea onChange ={e =>{
+      e.preventDefault()
+      showPreview(input.value)
+      // console.log(state.text);
+    } } className="form-control" rows="10" id="textInput" ref={node => { input = node}} defaultValue = {state.text}></textArea>
   )
 }
 
