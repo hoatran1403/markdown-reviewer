@@ -1,0 +1,23 @@
+@font-face {
+font-family: 'Billabong';
+font-style: normal;
+font-weight: normal;
+src: local('Billabong'), url('Billabong.woff') format('woff');
+}
+
+.title {
+  font-family: 'Billabong';
+  color: #30618a;
+  font-size: 56px;
+  padding: 10px;
+}
+
+.footer {
+  padding: 10px;
+}
+
+.jumbotron {
+  padding: 0px;
+  min-height: 615px;
+
+}

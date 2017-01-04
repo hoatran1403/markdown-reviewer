@@ -8,13 +8,8 @@ import reducer from './reducers';
 
 //import css
 import bootstrap from './../../node_modules/bootstrap/dist/css/bootstrap.css';
+import style from './styles/style.css';
 
-const defaultState = {
-  text: {
-    parsedText : "testing testing"
-  }
-
-}
 
 const store = createStore(reducer);
 

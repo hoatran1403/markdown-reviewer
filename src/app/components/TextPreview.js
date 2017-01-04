@@ -1,17 +1,10 @@
 import React from 'react';
 
-// const TextPreview = React.createClass({
-//   render(){
-//     return(
-//       <div className="panel-body">this is text Preview </div>
-//     );
-//   }
-// });
 
 const TextPreview = ({state, dispatch}) => {
-
   return(
-    <div className="panel-body">{state.text}</div>
+    <div className="panel-body" rows="25" dangerouslySetInnerHTML={{__html:state.text.parsedText}}>
+    </div>
   )
 }
 

@@ -12,8 +12,8 @@ marked.setOptions({
 });
 
 export function parseText(inputText){
-  // var parsedText = marked(inputText);
-  var parsedText = inputText;
+  var parsedText = marked(inputText);
+  
   return {
     type: 'PARSE_TEXT',
     parsedText
